@@ -1,0 +1,193 @@
+# Granite Linux
+
+## Filosofía
+
+Granite Linux es una distribución GNU/Linux enfocada en la simplicidad, la estabilidad y el bajo consumo de recursos. Está pensada para funcionar bien tanto en equipos antiguos como en hardware moderno, ofreciendo un entorno limpio y rápido sin aplicaciones innecesarias.
+
+**Objetivos**
+
+* Ligera.
+* Rápida.
+* Estable.
+* Fácil de mantener.
+* Minimalista.
+
+---
+
+# Base del sistema
+
+* Base: Debian Stable.
+* Compatibilidad: Bedrock Linux (para combinar distribuciones si el usuario lo desea).
+* Entorno de escritorio: XFCE.
+* Gestor de inicio: LightDM.
+* Gestor de arranque: GRUB.
+
+---
+
+# Requisitos mínimos
+
+* CPU: Doble núcleo.
+* RAM: 1 GB (2 GB recomendados).
+* Disco: 8 GB.
+* Arquitectura: amd64.
+
+---
+
+# Aplicaciones incluidas
+
+* Thunar
+* Mousepad
+* Terminal XFCE
+* Ristretto
+* Parole
+* Firefox ESR
+* NetworkManager
+
+Solo el software imprescindible.
+
+---
+
+# Apariencia
+
+* Diseño minimalista.
+* Colores grises inspirados en el granito.
+* Tipografía IBM Plex Sans.
+* Iconografía sencilla.
+* Logo con un gato de estilo geométrico.
+
+---
+
+# Consumo objetivo
+
+Después del arranque:
+
+* RAM: 350–500 MB.
+* CPU en reposo: mínima.
+* ISO aproximada: 1–1,5 GB.
+
+---
+
+# Construcción de la ISO
+
+## 1. Instalar Debian
+
+Utilizar una instalación limpia de Debian Stable dentro de una máquina virtual.
+
+---
+
+## 2. Instalar herramientas
+
+```bash
+sudo apt update
+sudo apt install live-build debootstrap git
+```
+
+---
+
+## 3. Crear el proyecto
+
+```bash
+mkdir granite-linux
+cd granite-linux
+
+lb config
+```
+
+---
+
+## 4. Crear la lista de paquetes
+
+```text
+config/package-lists/granite.list.chroot
+```
+
+Contenido:
+
+```text
+xfce4
+lightdm
+network-manager
+firefox-esr
+mousepad
+thunar
+parole
+ristretto
+sudo
+curl
+git
+```
+
+---
+
+## 5. Personalización
+
+Modificar:
+
+* Fondo de pantalla.
+* Tema GTK.
+* Iconos.
+* Plymouth.
+* GRUB.
+* Configuración de XFCE.
+* Logo Granite Linux.
+
+---
+
+## 6. Integrar Bedrock Linux
+
+Instalar Bedrock mediante un script durante la construcción o dejar una herramienta que permita instalarlo tras la instalación del sistema, según el enfoque del proyecto.
+
+---
+
+## 7. Crear la ISO
+
+```bash
+sudo lb build
+```
+
+Resultado:
+
+```text
+live-image-amd64.hybrid.iso
+```
+
+---
+
+# Organización del proyecto
+
+```text
+granite-linux/
+│
+├── config/
+├── scripts/
+├── themes/
+├── icons/
+├── wallpapers/
+├── packages/
+├── branding/
+└── README.md
+```
+
+---
+
+# Identidad
+
+Nombre:
+
+**Granite Linux**
+
+Lema:
+
+> Stable. Lightweight. Yours.
+
+---
+
+# Principios
+
+* Sin bloatware.
+* Arranque rápido.
+* Software estable.
+* Fácil de personalizar.
+* Experiencia limpia desde el primer inicio.
+* Mantener la compatibilidad con Debian siempre que sea posible.
+
