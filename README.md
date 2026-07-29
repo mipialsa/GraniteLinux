@@ -5,7 +5,7 @@ Granite linux is based of debian and bedrock linux. The dektop enviorment is XFC
 Is a Spanish project to create a fast, and secure linux based of Debian.
 
 
-# Granite Linux
+# Summary
 
 Granite Linux is a lightweight, minimalist GNU/Linux distribution based on Debian Stable, designed to deliver a fast, stable, and clean desktop experience. It combines the reliability of Debian with optional Bedrock Linux compatibility, allowing advanced users to integrate packages from multiple Linux distributions.
 
