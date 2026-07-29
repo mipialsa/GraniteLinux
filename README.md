@@ -2,7 +2,7 @@
 Granite linux is based of debian and bedrock linux. The dektop enviorment is XFCE for low pc.
 
 
-Is Spanish project to create a fast, and secure linux based of Debian.
+Is a Spanish project to create a fast, and secure linux based of Debian.
 
 
 # Granite Linux
