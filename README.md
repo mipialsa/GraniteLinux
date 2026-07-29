@@ -1,4 +1,4 @@
-# GraniteLinux
+# Granite Linux
 Granite linux is based of debian and bedrock linux. The dektop enviorment is XFCE for low pc.
 
 
