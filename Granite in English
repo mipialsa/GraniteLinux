@@ -1,0 +1,195 @@
+# Granite Linux
+
+## Philosophy
+
+Granite Linux is a GNU/Linux distribution focused on simplicity, stability, and low resource usage. It is designed to run smoothly on both older and modern hardware, providing a clean, fast experience without unnecessary software.
+
+**Goals**
+
+* Lightweight.
+* Fast.
+* Stable.
+* Easy to maintain.
+* Minimalist.
+
+---
+
+# System Base
+
+* Base: Debian Stable.
+* Compatibility: Bedrock Linux (allowing users to combine distributions if desired).
+* Desktop Environment: XFCE.
+* Display Manager: LightDM.
+* Bootloader: GRUB.
+
+---
+
+# Minimum Requirements
+
+* CPU: Dual-core processor.
+* RAM: 1 GB (2 GB recommended).
+* Storage: 8 GB.
+* Architecture: amd64.
+
+---
+
+# Included Applications
+
+* Thunar
+* Mousepad
+* XFCE Terminal
+* Ristretto
+* Parole
+* Firefox ESR
+* NetworkManager
+
+Only the essential software is included.
+
+---
+
+# Appearance
+
+* Minimalist design.
+* Granite-inspired gray color palette.
+* IBM Plex Sans typography.
+* Simple iconography.
+* Geometric cat logo.
+
+---
+
+# Performance Target
+
+After boot:
+
+* RAM usage: 350–500 MB.
+* Idle CPU usage: Minimal.
+* ISO size: Approximately 1–1.5 GB.
+
+---
+
+# Building the ISO
+
+## 1. Install Debian
+
+Use a clean installation of Debian Stable inside a virtual machine.
+
+---
+
+## 2. Install the required tools
+
+```bash
+sudo apt update
+sudo apt install live-build debootstrap git
+```
+
+---
+
+## 3. Create the project
+
+```bash
+mkdir granite-linux
+cd granite-linux
+
+lb config
+```
+
+---
+
+## 4. Create the package list
+
+Create:
+
+```text
+config/package-lists/granite.list.chroot
+```
+
+Contents:
+
+```text
+xfce4
+lightdm
+network-manager
+firefox-esr
+mousepad
+thunar
+parole
+ristretto
+sudo
+curl
+git
+```
+
+---
+
+## 5. Customization
+
+Customize:
+
+* Wallpaper.
+* GTK theme.
+* Icons.
+* Plymouth.
+* GRUB.
+* XFCE configuration.
+* Granite Linux logo.
+
+---
+
+## 6. Integrate Bedrock Linux
+
+Install Bedrock Linux through a script during the build process or provide a tool that allows users to install it after the operating system has been installed, depending on the project's approach.
+
+---
+
+## 7. Build the ISO
+
+```bash
+sudo lb build
+```
+
+Output:
+
+```text
+live-image-amd64.hybrid.iso
+```
+
+---
+
+# Project Structure
+
+```text
+granite-linux/
+│
+├── config/
+├── scripts/
+├── themes/
+├── icons/
+├── wallpapers/
+├── packages/
+├── branding/
+└── README.md
+```
+
+---
+
+# Identity
+
+Name:
+
+**Granite Linux**
+
+Slogan:
+
+> Stable. Lightweight. Yours.
+
+---
+
+# Principles
+
+* No bloatware.
+* Fast boot times.
+* Stable software.
+* Easy to customize.
+* Clean experience from the first boot.
+* Maintain compatibility with Debian whenever possible.
+
