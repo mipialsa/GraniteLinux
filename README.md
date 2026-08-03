@@ -1,6 +1,7 @@
 # Granite Linux
 
-<img width="256" height="256" alt="image" src="https://github.com/user-attachments/assets/8363b266-64d4-4673-ad67-52905ea44f19" />
+<img width="256" height="256" alt="Granite-Linux" src="https://github.com/user-attachments/assets/2e5728b4-b298-464d-9705-356e75eef382" />
+
 
 Granite linux is based of debian and bedrock linux. The dektop enviorment is XFCE for low pc.
 
